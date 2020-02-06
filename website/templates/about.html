@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+  {% block content %}
+  <head>
+    <title>About Me</title>
+  </head>
+    <main id="about">
+      <h1 class="lg-heading">About <span class="text-secondary">Me</span></h1>
+      <h2 class="sm-heading">
+        ALLOW ME TO INTRODUCE MYSLEF.
+      </h2>
+      <div class="about-info">
+        <img src="{% static 'img/portrait.jpg' %}" alt="Arbaaz Ali" class="bio-image" />
+        <div class="bio">
+          <h3 class="text-secondary">Hello! <br> I'm Arbaaz.</h3>
+          <p>
+            I live in Mumbai, India and pursuing engineering degree(B.E.) in computer science.
+            I'm obsessed with Python programming language that's why I chose Django framework to develop web applications and websites.
+            I am continuously exploring and practicing django by building   <a style="text-decoration: underline dotted;" href="{% url 'work' %}">projects</a>. If you are looking to hire django web developer,
+            you can get in touch me  <a style="text-decoration: underline dotted;" href="{% url 'contact' %}">here.</a> 
+          </p>
+        </div> 
+        <!--
+        <div class="job job-1">
+          <h3>Job 1</h3>
+          <h6>Full Stack Developer</h6>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem
+            explicabo sunt in modi odit doloremque optio assumenda vel impedit
+            quis!
+          </p>
+        </div>
+        <div class="job job-2">
+          <h3>Job 2</h3>
+          <h6>Front End Developer</h6>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem
+            explicabo sunt in modi odit doloremque optio assumenda vel impedit
+            quis!
+          </p>
+        </div>
+        <div class="job job-3">
+          <h3>Job 3</h3>
+          <h6>Progammer</h6>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem
+            explicabo sunt in modi odit doloremque optio assumenda vel impedit
+            quis!
+          </p>
+        </div>
+        -->
+      </div>
+    </main>
+    <footer id="main-footer">
+      Copyrigh &copy; 2019, Arbaaz Ali
+    </footer>
+    
+  {% endblock %}  
